@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+.gitignore
+book_java/src/main/resources/static/
+book_java/src/main/resources/templates/
