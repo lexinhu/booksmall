@@ -11,9 +11,9 @@ public class CrosConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("*")
-                .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedMethods("*")  //允许任何方法（post、get等
                 .allowCredentials(true)
                 .maxAge(3600)
-                .allowedHeaders("*");
+                .allowedHeaders("*"); //允许跨域的域名，可以用*表示允许任何域名使用
     }
 }
