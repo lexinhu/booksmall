@@ -11,6 +11,9 @@ const routes = [{
     path: '/',
     name: '图书展示系统',
     redirect: '/BookManage',
+    meta: {
+        title: '欢迎来到图书管理系统'
+    },
     show: true,
     component: Index,
     children: [{
